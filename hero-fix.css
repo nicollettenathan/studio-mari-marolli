@@ -1,4 +1,4 @@
-/* Hero refinement — crisp portraits + official Mari Marolli logo */
+/* Hero refinement — keep the high-resolution photos and official logo embedded in styles.css */
 .side{
   top:82px;
   bottom:auto;
@@ -15,16 +15,9 @@
   will-change:transform;
   transform:translateZ(0);
 }
-.side-l{
-  left:0;
-  background-image:linear-gradient(90deg,rgba(5,5,5,0) 0%,rgba(5,5,5,0) 58%,rgba(5,5,5,.48) 78%,#050505 100%),url('assets/mari-left.png');
-  background-position:left top;
-}
-.side-r{
-  right:0;
-  background-image:linear-gradient(270deg,rgba(5,5,5,0) 0%,rgba(5,5,5,0) 58%,rgba(5,5,5,.48) 78%,#050505 100%),url('assets/mari-right.png');
-  background-position:right top;
-}
+/* Do not replace background-image here: styles.css contains the original high-resolution photos. */
+.side-l{left:0;background-position:left top}
+.side-r{right:0;background-position:right top}
 .shade{
   background:linear-gradient(90deg,rgba(5,5,5,0) 0%,rgba(5,5,5,.15) 24%,rgba(5,5,5,.9) 39%,rgba(5,5,5,.96) 50%,rgba(5,5,5,.9) 61%,rgba(5,5,5,.15) 76%,rgba(5,5,5,0) 100%),linear-gradient(180deg,rgba(5,5,5,0) 58%,rgba(5,5,5,.8) 82%,#050505 100%);
 }
