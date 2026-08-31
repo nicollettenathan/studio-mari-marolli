@@ -1,0 +1,52 @@
+/* Hero refinement — crisp portraits + official Mari Marolli logo */
+.side{
+  top:82px;
+  bottom:auto;
+  height:calc(100vh - 82px);
+  min-height:620px;
+  width:32vw;
+  max-width:560px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-color:#050505;
+  filter:grayscale(1) contrast(1.18) brightness(1.08);
+  opacity:1;
+  image-rendering:auto;
+  will-change:transform;
+  transform:translateZ(0);
+}
+.side-l{
+  left:0;
+  background-image:linear-gradient(90deg,rgba(5,5,5,0) 0%,rgba(5,5,5,0) 58%,rgba(5,5,5,.48) 78%,#050505 100%),url('assets/mari-left.png');
+  background-position:left top;
+}
+.side-r{
+  right:0;
+  background-image:linear-gradient(270deg,rgba(5,5,5,0) 0%,rgba(5,5,5,0) 58%,rgba(5,5,5,.48) 78%,#050505 100%),url('assets/mari-right.png');
+  background-position:right top;
+}
+.shade{
+  background:linear-gradient(90deg,rgba(5,5,5,0) 0%,rgba(5,5,5,.15) 24%,rgba(5,5,5,.9) 39%,rgba(5,5,5,.96) 50%,rgba(5,5,5,.9) 61%,rgba(5,5,5,.15) 76%,rgba(5,5,5,0) 100%),linear-gradient(180deg,rgba(5,5,5,0) 58%,rgba(5,5,5,.8) 82%,#050505 100%);
+}
+.hero{min-height:690px;padding-top:64px}
+.hero-copy{position:relative;z-index:3}
+.hero-copy>img{
+  width:168px!important;
+  height:168px!important;
+  object-fit:contain!important;
+  filter:drop-shadow(0 8px 30px rgba(201,154,69,.16))!important;
+}
+.head .brand img{width:78px!important;height:78px!important;object-fit:contain!important}
+.logo-card img{width:178px!important;height:178px!important;object-fit:contain!important}
+.foot .brand img{width:86px!important;height:86px!important;object-fit:contain!important}
+@media(max-width:1000px){
+  .side{width:42vw;opacity:.78;filter:grayscale(1) contrast(1.15) brightness(1.04)}
+  .shade{background:linear-gradient(90deg,rgba(5,5,5,.08),rgba(5,5,5,.88) 34%,rgba(5,5,5,.95) 50%,rgba(5,5,5,.88) 66%,rgba(5,5,5,.08)),linear-gradient(180deg,transparent 60%,#050505 94%)}
+}
+@media(max-width:680px){
+  .side{top:68px;height:690px;min-height:0;width:58vw;background-size:cover;opacity:.48;filter:grayscale(1) contrast(1.12) brightness(.92)}
+  .side-l{background-position:42% top}
+  .side-r{background-position:58% top}
+  .hero{padding-top:90px;min-height:760px}
+  .hero-copy>img{width:132px!important;height:132px!important}
+}
